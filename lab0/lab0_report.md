@@ -6,7 +6,7 @@ Group: U4225 \
 Author: Barakhsin Grigorii Mikhailovich \
 Lab: Lab0 \
 Date of create: 03.10.2025 \
-Date of finished: TBD \
+Date of finished: TBD 
 
 
 Brand new repository for DevOps labs
