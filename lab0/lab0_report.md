@@ -10,7 +10,7 @@ Date of finished: TBD \
 
 
 Brand new repository for DevOps labs
-![Brand new repository for DevOps labs](/data/lab0-brand_new_repo.png)
+![Brand new repository for DevOps labs](/data/lab0-brand_new_repo.png?raw=true)
 
 Initial project setup
-![Initial project setup](/data/lab0-initial_project_setup.png)
+![Initial project setup](/data/lab0-initial_project_setup.png?raw=true)
