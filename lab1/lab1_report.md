@@ -10,49 +10,49 @@ Date of finished: TBD
 
 
 ## Docker installation
-* Установить Docker Desktop (для Windows/Mac) или Docker Engine (для Linux)
-* Проверить установку командой docker --version
-* Запустить тестовый контейнер: docker run hello-world
+* РЈСЃС‚Р°РЅРѕРІРёС‚СЊ Docker Desktop (РґР»СЏ Windows/Mac) РёР»Рё Docker Engine (РґР»СЏ Linux)
+* РџСЂРѕРІРµСЂРёС‚СЊ СѓСЃС‚Р°РЅРѕРІРєСѓ РєРѕРјР°РЅРґРѕР№ docker --version
+* Р—Р°РїСѓСЃС‚РёС‚СЊ С‚РµСЃС‚РѕРІС‹Р№ РєРѕРЅС‚РµР№РЅРµСЂ: docker run hello-world
 ![image](/data/lab1-docker_installation.png?raw=true)
-* Изучить базовые команды: docker images, docker ps, docker ps -a
+* РР·СѓС‡РёС‚СЊ Р±Р°Р·РѕРІС‹Рµ РєРѕРјР°РЅРґС‹: docker images, docker ps, docker ps -a
 Docker installation part 2
 ![image](/data/lab1-docker_installation2.png?raw=true)
 
 ## Work with existing images
-* Скачать образ Ubuntu: docker pull ubuntu:latest
-* Запустить интерактивный контейнер: docker run -it ubuntu bash
+* РЎРєР°С‡Р°С‚СЊ РѕР±СЂР°Р· Ubuntu: docker pull ubuntu:latest
+* Р—Р°РїСѓСЃС‚РёС‚СЊ РёРЅС‚РµСЂР°РєС‚РёРІРЅС‹Р№ РєРѕРЅС‚РµР№РЅРµСЂ: docker run -it ubuntu bash
 ![image](/data/lab1-docker_ubuntu_image.png?raw=true)
-* Внутри контейнера установить пакет (например, curl): apt update && apt install -y curl
-* Проверить установку: curl --version
+* Р’РЅСѓС‚СЂРё РєРѕРЅС‚РµР№РЅРµСЂР° СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РїР°РєРµС‚ (РЅР°РїСЂРёРјРµСЂ, curl): apt update && apt install -y curl
+* РџСЂРѕРІРµСЂРёС‚СЊ СѓСЃС‚Р°РЅРѕРІРєСѓ: curl --version
 ![image](/data/lab1-docker_ubuntu_image_check.png?raw=true)
-* Выйти из контейнера: exit
+* Р’С‹Р№С‚Рё РёР· РєРѕРЅС‚РµР№РЅРµСЂР°: exit
 
 ## Work with WEB-server
 
-* Запустить контейнер с nginx: docker run -d -p 8080:80 --name web-server nginx:alpine
-* Посмотреть логи контейнера: docker logs web-server
+* Р—Р°РїСѓСЃС‚РёС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ СЃ nginx: docker run -d -p 8080:80 --name web-server nginx:alpine
+* РџРѕСЃРјРѕС‚СЂРµС‚СЊ Р»РѕРіРё РєРѕРЅС‚РµР№РЅРµСЂР°: docker logs web-server
 ![image](/data/lab1-docker_nginx_web.png)
-* Проверить работу в браузере: http://localhost:8080
+* РџСЂРѕРІРµСЂРёС‚СЊ СЂР°Р±РѕС‚Сѓ РІ Р±СЂР°СѓР·РµСЂРµ: http://localhost:8080
 
 ![image](/data/lab1-docker_nginx_web2.png)
-* Подключиться к контейнеру: docker exec -it web-server sh
+* РџРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє РєРѕРЅС‚РµР№РЅРµСЂСѓ: docker exec -it web-server sh
 
 ## Container management
 
-* Посмотреть запущенные контейнеры: docker ps
-* Посмотреть все контейнеры: docker ps -a
-* Остановить контейнер: docker stop web-server
-* Запустить остановленный контейнер: docker start web-server
-* Удалить контейнер: docker rm web-server
-* Удалить образ: docker rmi nginx:alpine
+* РџРѕСЃРјРѕС‚СЂРµС‚СЊ Р·Р°РїСѓС‰РµРЅРЅС‹Рµ РєРѕРЅС‚РµР№РЅРµСЂС‹: docker ps
+* РџРѕСЃРјРѕС‚СЂРµС‚СЊ РІСЃРµ РєРѕРЅС‚РµР№РЅРµСЂС‹: docker ps -a
+* РћСЃС‚Р°РЅРѕРІРёС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ: docker stop web-server
+* Р—Р°РїСѓСЃС‚РёС‚СЊ РѕСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Р№ РєРѕРЅС‚РµР№РЅРµСЂ: docker start web-server
+* РЈРґР°Р»РёС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ: docker rm web-server
+* РЈРґР°Р»РёС‚СЊ РѕР±СЂР°Р·: docker rmi nginx:alpine
 ![image](/data/lab1-docker_container_management.png)
 
 ## Work with volumes
 
-* Создать том: docker volume create my-volume
-* Запустить контейнер с томом: docker run -it --name volume-test -d -v my-volume:/data ubuntu bash
-* Подключиться к контейнеру: docker exec -it volume-test bash
-* Создать файл в томе: echo "Hello from volume" > /data/test.txt
-* Удалить контейнер и создать новый с тем же томом
-* Проверить, что файл сохранился
+* РЎРѕР·РґР°С‚СЊ С‚РѕРј: docker volume create my-volume
+* Р—Р°РїСѓСЃС‚РёС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ СЃ С‚РѕРјРѕРј: docker run -it --name volume-test -d -v my-volume:/data ubuntu bash
+* РџРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє РєРѕРЅС‚РµР№РЅРµСЂСѓ: docker exec -it volume-test bash
+* РЎРѕР·РґР°С‚СЊ С„Р°Р№Р» РІ С‚РѕРјРµ: echo "Hello from volume" > /data/test.txt
+* РЈРґР°Р»РёС‚СЊ РєРѕРЅС‚РµР№РЅРµСЂ Рё СЃРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ СЃ С‚РµРј Р¶Рµ С‚РѕРјРѕРј
+* РџСЂРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ С„Р°Р№Р» СЃРѕС…СЂР°РЅРёР»СЃСЏ
 ![image](/data/lab1-docker_volume_management.png)
