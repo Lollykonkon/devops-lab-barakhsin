@@ -5,7 +5,7 @@ Year: 2025/2026 \
 Group: U4225 \ 
 Author: Barakhsin Grigorii Mikhailovich \
 Lab: Lab0 \
-Date of create: 03.10.2025 \
+Date of create: 06.10.2025 \
 Date of finished: TBD 
 
 
