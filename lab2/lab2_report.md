@@ -9,7 +9,7 @@ Date of create: 14.10.2025 \
 Date of finished: TBD 
 
 
-# Настройка CI/CD пайплайна с GitHub Actions 
+# РќР°СЃС‚СЂРѕР№РєР° CI/CD РїР°Р№РїР»Р°Р№РЅР° СЃ GitHub Actions 
 new DockerHub repo \
 <img src="../data/lab2-dockerhub_repo.png" alt="image" width="500">
 
