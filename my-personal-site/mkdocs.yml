@@ -1,0 +1,30 @@
+site_name: gregory.Site
+site_description: "Персональный сайт на MkDocs"
+site_author: "Gregory"
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.share
+nav:
+  - Главная: index.md
+  - О себе: about.md
+  - Проекты: projects.md
+  - Контакты: contacts.md
+  - Резюме: resume.md
+  - Достижения: achievements.md
+theme:
+  name: material
+  custom_dir: overrides
+  logo: images/logo.png
+  palette:
+    primary: pink              
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search

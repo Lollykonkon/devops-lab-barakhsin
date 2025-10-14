@@ -9,8 +9,8 @@ Date of create: 03.10.2025 \
 Date of finished: 06.10.2025
 
 
-Brand new repository for DevOps labs
-![Brand new repository for DevOps labs](/data/lab0-brand_new_repo.png?raw=true)
+mkdocs.yml file config
+![Brand new repository for DevOps labs](/data/c-mkdocs.png?raw=true)
 
 Initial project setup
 ![Initial project setup](/data/lab0-initial_project_setup.png?raw=true)
