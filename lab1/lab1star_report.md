@@ -8,7 +8,7 @@ Lab: Lab0 \
 Date of create: 14.10.2025 \
 Date of finished: TBD 
 
-# Создание Dockerfile 
+# РЎРѕР·РґР°РЅРёРµ Dockerfile 
 app.py content \
 <img src="../data/lab1star_apppy.png" alt="image" width="300">
 
