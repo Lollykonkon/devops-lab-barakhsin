@@ -10,16 +10,16 @@ Date of finished: TBD
 
 # Создание Dockerfile 
 app.py content \
-<img src="../data/lab1star_apppy.png" alt="image" width="300">
+<img src="../data/lab1star_apppy.png" alt="image" >
 
 
 requirements content \
-<img src="../data/lab1star-req.png" alt="image" width="200">
+<img src="../data/lab1star-req.png" alt="image" >
 
 
 Dockerfile content \
-<img src="../data/lab2-Dockerfile.png" alt="image" width="400">
+<img src="../data/lab2-Dockerfile.png" alt="image" >
 
 
 Curl check \
-<img src="../data/lab2-actually_lab1star.png" alt="image" width="600">
+<img src="../data/lab2-actually_lab1star.png" alt="image" >
